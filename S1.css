@@ -1,0 +1,288 @@
+   body {
+      
+      margin: 0;
+      padding-top: 38px;
+      background-color: #f4f4f4;
+      color: #333;
+      font-family: Krylon Regular;
+      font-weight: bold;
+      letter-spacing: 0.12em;
+    }
+    @font-face {
+        font-family: Krylon Regular;
+        src:url(fonts/Krylon-Regular.woff2)
+    }
+    /* Barra de navegación */
+    nav {
+    background: #000; /* Fondo negro */
+    padding: 50px 40px 0px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Fija la barra en la parte superior */
+    top: 0; /* Se asegura de que esté en la parte superior */
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    z-index: 1000; /* Se mantiene por encima de otros elementos */
+    align-items: flex-end;
+}
+
+.nav-left {
+    display: flex;
+    gap: 0px; /* Espacio entre enlaces */
+}
+
+.nav-left a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 18px; /* Espaciado interno sin afectar la posición */
+    border-left: 1px solid #fff; /* Borde blanco de 2px */
+    border-radius: 5px; /* Bordes redondeados opcionales */
+    display: flex; /* Asegura que el padding no afecte el layout */
+    margin-bottom: 0px;
+}
+.nav-left  a:last-child{
+    border-right: 1px solid #ffffff;
+}
+
+.nav-left a:hover {
+   background-color: #302f2f;
+}
+
+.nav-right {
+   
+    color: #fff;
+    font-size: 24px; /* Tamaño de letra más grande */
+    font-weight: bold;
+    display: flex-end;
+    padding-right: 55px;
+    padding-bottom:10px ;
+    letter-spacing: 0.18em;
+}
+
+/* Separador blanco debajo de la barra de navegación */
+.separator {
+    height: 90px;
+    background-color: white;
+  }
+  
+  .intro-section {
+    position: relative; /* Asegúrate de que la sección contenedora tenga una posición relativa */
+    overflow: hidden; /* Evita que el pseudo-elemento se desborde */
+    height: 400px;
+  
+
+}
+
+.intro-section::before {
+    content: ""; /* Crea un pseudo-elemento vacío */
+    position: absolute; /* Posiciona encima de la imagen */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(IMG/portada1.png);
+    transform: scaleX(-1);
+     /* Aplica la imagen de fondo directamente */
+    background-size: cover; /* Asegura que la imagen cubra todo el área */
+    filter: blur(20px); /* Aplica el blur solo a la imagen */
+    z-index: 1; /* Asegura que el pseudo-elemento quede por debajo del contenido */
+}
+
+.intro-content {
+    position: relative; /* Contenido encima del pseudo-elemento */
+    z-index: 2; /* Contenido por encima del blur */
+    display: flex; /* Activa Flexbox */
+    align-items: center; /* Alinea los elementos verticalmente */
+    justify-content: flex-start; /* Alinea los elementos horizontalmente a la izquierda */
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.profile-img {
+    border-radius: 50%; /* Hace la imagen circular */
+    width: 275px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Ajusta el tamaño de la imagen */
+    margin-right: 30px; 
+    margin-top: 42px;
+    /* Elimina el margin-top porque ahora la alineación vertical la controla flexbox */
+}
+
+.intro-content p {
+    font-size: 18px;
+    margin: 0; /* Elimina márgenes extra para mejor alineación */
+    display: inline-block; /* Esto asegura que el párrafo se comporte como un bloque */
+    margin-right: 60px;
+}
+.mas-de-mi p{
+    font-size: 16px;
+}
+.mas-de-mi2 p{
+    font-size: 16px;
+}
+.footer-spacing1{
+    margin: 20px;
+}
+.mas-de-mi{
+    margin: 0px 35px;
+
+}
+.conteniwi{
+    background-color: #d4d4d4;
+    padding-top: 45px;
+    padding-bottom: 50px;
+}
+.mas-de-mi2{
+    margin-top: 50px;
+    margin: 0px 35px;
+    text-align: right;
+}
+.payutu{
+    cursor: pointer;
+    background-color: #000;
+    color:#ffffff;
+    max-width: 80px;
+    min-width: 40px;
+    text-decoration: none;
+    padding: 10px 26px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4), 0px -1px 1px rgba(0, 0, 0, 0.722);
+}
+.payutu :hover{
+    background-color: #212121;
+}
+.payutu:active {
+    background-color: #2b2b2b;
+    transform: scale(0.90);
+}
+.tituliwi h2{
+    text-align: center;
+    font-size: 27px;
+    font-weight: bold;
+
+}
+.tituliwi p{
+    margin: 0 43px;
+    text-align: center;
+    font-size: 15px;
+}
+.portafo{
+    background-color: #d4d4d4;
+    padding-top: 35px;
+    padding-bottom: 55px;
+}
+.emmy1{
+    max-width: 80px;
+    margin-right: 15px;
+}
+.evidencia1{
+    padding: 10px 30px;
+    display: inline-block;
+    border: 1px solid #9c9c9c;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    border-radius: 15px;
+    margin-left: 55px;
+}
+.evidencia2{
+    padding: 10px 30px;
+    display: inline-block;
+    border: 1px solid #9c9c9c;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    border-radius: 15px;
+   
+}
+.primerboton{
+    display: inline-flex;
+align-items: center; /* Centra verticalmente */
+justify-content: center;
+text-decoration: none;
+margin: 20px 30px;
+background-color: #ffffff;
+border: 1px solid #8b8b8b;
+padding: 10px 25px;
+border-radius: 10px;
+box-shadow: 0px 3px 6px rgba(130, 130, 130, 0.6); /* Efecto presionado */ ;
+font-weight: bold;
+}
+.primerboton:hover{
+    background-color: #f6f6f6;
+}
+.primerboton:active{
+    transform: scale(0.97);
+    box-shadow: inset 0px 3px 6px rgba(130, 130, 130, 0.6);
+}
+.obvio{
+    margin: 0 45px;
+    font-size: 15px;
+}
+.mipag{
+    display: inline-flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center;
+    text-decoration: none;
+    margin: 20px 30px;
+    background-color: #ffffff;
+    border: 1px solid #8b8b8b;
+    padding: 10px 25px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(130, 130, 130, 0.6); /* Efecto presionado */ ;
+    font-weight: bold;
+}
+.mipag:hover{
+        background-color: #f6f6f6;
+
+}
+.mipag:active{
+    transform: scale(0.97);
+    box-shadow: inset 0px 3px 6px rgba(130, 130, 130, 0.6);
+}
+.miimag{
+    max-width: 80px;
+    margin-right: 15px;
+}
+.infoconta{
+    background-color: #d4d4d4;
+    padding-top: 32px;
+    padding-bottom: 55px; 
+  
+}
+.infoconta h2{
+   
+    text-align: center;
+    font-size: 27px;
+    font-weight: bold;
+
+}
+.infoconta p{
+   font-weight: bold;
+    margin: 10px 66px 30px 66px;
+    
+    margin-left: 60px;
+}
+.correolis{
+    
+ margin-left: 60px;
+ margin-bottom: 30px;
+    cursor: pointer;
+    background-color: #000;
+    color:#ffffff;
+    max-width: 100px;
+    min-width: 95px;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4), 0px -1px 1px rgba(0, 0, 0, 0.722);
+}
+.tonote{
+    display: block;
+    margin-top: 66px;
+    border-left: 4px solid #ff0000; /* Grosor y color de la línea */
+    padding-left: 10px; /* Espacio entre la línea y el texto */
+}
+
+
