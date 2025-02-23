@@ -1,12 +1,18 @@
    body {
-      
-      margin: 0;
-      padding-top: 38px;
-      background-color: #f4f4f4;
-      color: #333;
-      font-family: Krylon Regular;
-      font-weight: bold;
-      letter-spacing: 0.12em;
+    margin: 0;
+   
+    padding: 30px 0 0 0;
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: Krylon Regular;
+    font-weight: bold;
+    letter-spacing: 0.12em;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
     }
     @font-face {
         font-family: Krylon Regular;
@@ -14,8 +20,10 @@
     }
     /* Barra de navegación */
     nav {
+        flex-shrink: 2;
+        flex-grow: 1;
     background: #000; /* Fondo negro */
-    padding: 50px 40px 0px 40px;
+    padding: 45px 20px 0px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,20 +32,22 @@
     left: 0;
     width: 100%; /* Ocupa todo el ancho de la pantalla */
     z-index: 1000; /* Se mantiene por encima de otros elementos */
-    align-items: flex-end;
 }
 
 .nav-left {
     display: flex;
+    flex-shrink: 1;
     gap: 0px; /* Espacio entre enlaces */
 }
 
+
 .nav-left a {
+    flex-shrink: 1;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    font-size: 16px;
-    padding: 8px 18px; /* Espaciado interno sin afectar la posición */
+    font-size: 1em;
+    padding: 8px 16px; /* Espaciado interno sin afectar la posición */
     border-left: 1px solid #fff; /* Borde blanco de 2px */
     border-radius: 5px; /* Bordes redondeados opcionales */
     display: flex; /* Asegura que el padding no afecte el layout */
@@ -52,19 +62,21 @@
 }
 
 .nav-right {
+   flex-shrink: 1;
    
     color: #fff;
-    font-size: 24px; /* Tamaño de letra más grande */
+    font-size: 1.6em; /* Tamaño de letra más grande */
     font-weight: bold;
-    display: flex-end;
-    padding-right: 55px;
+    display: flex;
+    text-align: right;
+    padding-right: 1.4em;
     padding-bottom:10px ;
     letter-spacing: 0.18em;
 }
 
 /* Separador blanco debajo de la barra de navegación */
 .separator {
-    height: 90px;
+    height: 85px;
     background-color: white;
   }
   
@@ -103,37 +115,47 @@
 }
 
 .profile-img {
+min-width: 20px;
     border-radius: 50%; /* Hace la imagen circular */
-    width: 275px; /* Ajusta el tamaño de la imagen */
+    max-width: 268px; /* Ajusta el tamaño de la imagen */
     height: auto; /* Ajusta el tamaño de la imagen */
-    margin-right: 30px; 
+    margin-right: 25px; 
     margin-top: 42px;
+    margin-left: 40px;
+    padding-left: 40px;
     /* Elimina el margin-top porque ahora la alineación vertical la controla flexbox */
 }
 
 .intro-content p {
-    font-size: 18px;
+    font-size: 0.85em;
+    margin-left: 10px;
     margin: 0; /* Elimina márgenes extra para mejor alineación */
     display: inline-block; /* Esto asegura que el párrafo se comporte como un bloque */
-    margin-right: 60px;
+    margin-right: 40px;
 }
+
 .mas-de-mi p{
-    font-size: 16px;
+    font-size: 0.98em;
 }
 .mas-de-mi2 p{
-    font-size: 16px;
+    font-size: 0.98em;
 }
 .footer-spacing1{
     margin: 20px;
 }
 .mas-de-mi{
     margin: 0px 35px;
+    text-align: left;
 
 }
 .conteniwi{
+    display: flex;
+    flex-direction: column;
     background-color: #d4d4d4;
     padding-top: 45px;
     padding-bottom: 50px;
+  
+    width: 100%;
 }
 .mas-de-mi2{
     margin-top: 50px;
@@ -145,11 +167,13 @@
     background-color: #000;
     color:#ffffff;
     max-width: 80px;
-    min-width: 40px;
+    min-width: 43px;
     text-decoration: none;
     padding: 10px 26px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4), 0px -1px 1px rgba(0, 0, 0, 0.722);
+    white-space: nowrap;
+    font-size: 0.86em;
 }
 .payutu :hover{
     background-color: #212121;
@@ -170,6 +194,7 @@
     font-size: 15px;
 }
 .portafo{
+    width: 100%;
     background-color: #d4d4d4;
     padding-top: 35px;
     padding-bottom: 55px;
@@ -246,13 +271,12 @@ font-weight: bold;
     margin-right: 15px;
 }
 .infoconta{
+    width: 100%;
     background-color: #d4d4d4;
-    padding-top: 32px;
-    padding-bottom: 55px; 
-  
+    padding-top: 30px;
+    padding-bottom: 50px; 
 }
 .infoconta h2{
-   
     text-align: center;
     font-size: 27px;
     font-weight: bold;
@@ -261,8 +285,6 @@ font-weight: bold;
 .infoconta p{
    font-weight: bold;
     margin: 10px 66px 30px 66px;
-    
-    margin-left: 60px;
 }
 .correolis{
     
@@ -272,7 +294,7 @@ font-weight: bold;
     background-color: #000;
     color:#ffffff;
     max-width: 100px;
-    min-width: 95px;
+    min-width: 92px;
     text-decoration: none;
     padding: 12px 28px;
     border-radius: 10px;
@@ -280,9 +302,10 @@ font-weight: bold;
 }
 .tonote{
     display: block;
-    margin-top: 66px;
-    border-left: 4px solid #ff0000; /* Grosor y color de la línea */
+ 
+    border-left: 6px solid #ff0000; /* Grosor y color de la línea */
     padding-left: 10px; /* Espacio entre la línea y el texto */
 }
+
 
 
