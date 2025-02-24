@@ -20,59 +20,54 @@
     }
     /* Barra de navegación */
     nav {
-        flex-shrink: 2;
-        flex-grow: 1;
-    background: #000; /* Fondo negro */
-    padding: 45px 20px 0px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed; /* Fija la barra en la parte superior */
-    top: 0; /* Se asegura de que esté en la parte superior */
-    left: 0;
-    width: 100%; /* Ocupa todo el ancho de la pantalla */
-    z-index: 1000; /* Se mantiene por encima de otros elementos */
-}
-
-.nav-left {
-    display: flex;
-    flex-shrink: 1;
-    gap: 0px; /* Espacio entre enlaces */
-}
-
-
-.nav-left a {
-    flex-shrink: 1;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1em;
-    padding: 8px 16px; /* Espaciado interno sin afectar la posición */
-    border-left: 1px solid #fff; /* Borde blanco de 2px */
-    border-radius: 5px; /* Bordes redondeados opcionales */
-    display: flex; /* Asegura que el padding no afecte el layout */
-    margin-bottom: 0px;
-}
-.nav-left  a:last-child{
-    border-right: 1px solid #ffffff;
-}
-
-.nav-left a:hover {
-   background-color: #302f2f;
-}
-
-.nav-right {
-   flex-shrink: 1;
-   
-    color: #fff;
-    font-size: 1.6em; /* Tamaño de letra más grande */
-    font-weight: bold;
-    display: flex;
-    text-align: right;
-    padding-right: 1.4em;
-    padding-bottom:10px ;
-    letter-spacing: 0.18em;
-}
+        background: #000;
+        padding: 15px 20px; /* Reducido para evitar exceso de espacio */
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%; /* Asegura que ocupe todo el ancho */
+        z-index: 1000;
+        flex-wrap: wrap;
+    }
+    
+    .nav-left {
+        display: flex;
+        gap: 0px;
+        flex: 1; /* Ocupa el espacio restante */
+    }
+    
+    .nav-left a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1em;
+        padding: 8px 16px;
+        border-left: 1px solid #fff;
+        border-radius: 5px;
+        display: block; /* Se mantiene correctamente en la estructura */
+    }
+    
+    .nav-left a:last-child {
+        border-right: 1px solid #ffffff;
+    }
+    
+    .nav-left a:hover {
+        background-color: #302f2f;
+    }
+    
+    .nav-right {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end; /* Asegura que el texto esté alineado a la derecha */
+        color: #fff;
+        font-size: 1.4em;
+        font-weight: bold;
+        padding-right: 1.4em;
+        letter-spacing: 0.18em;
+    }
 
 /* Separador blanco debajo de la barra de navegación */
 .separator {
