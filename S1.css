@@ -31,7 +31,7 @@
    left: 0;
     width: 100%; /* Ocupa todo el ancho de la pantalla */
     z-index: 3; /* Se mantiene por encima de otros elementos */
-    white-space: none;
+    white-space: normal;
 }
 
 .nav-left {
@@ -52,6 +52,7 @@
     border-radius: 5px; /* Bordes redondeados opcionales */
     display: flex; /* Asegura que el padding no afecte el layout */
     margin-bottom: 0px;
+    margin-left: 15px;
 }
 .nav-left  a:last-child{
     border-right: 1px solid #ffffff;
@@ -69,7 +70,7 @@
     font-weight: bold;
     display: flex;
     text-align: right;
-    padding-right: 1.4em;
+    padding-right: 1.2em;
     padding-bottom:px ;
     letter-spacing: 0.18em;
 }
@@ -204,16 +205,16 @@ min-width: 20px;
     margin-right: 15px;
 }
 .evidencia1{
-    padding: 10px 30px;
+    padding: 10px 15px;
     display: inline-block;
     border: 1px solid #9c9c9c;
     margin-top: 18px;
     margin-bottom: 18px;
     border-radius: 15px;
-    margin-left: 55px;
+    margin-left: 50px;
 }
 .evidencia2{
-    padding: 10px 30px;
+    padding: 10px 15px;
     display: inline-block;
     border: 1px solid #9c9c9c;
     margin-top: 18px;
@@ -274,7 +275,7 @@ font-weight: bold;
     width: 100%;
     background-color: #d4d4d4;
     padding-top: 30px;
-    padding-bottom: 50px; 
+    padding-bottom: 55px; 
 }
 .infoconta h2{
     text-align: center;
