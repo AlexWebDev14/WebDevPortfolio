@@ -82,7 +82,7 @@
 /* Separador blanco debajo de la barra de navegación */
 .separator {
     height: 85px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
   }
   
   .intro-section {
@@ -149,6 +149,8 @@ min-width: 20px;
 }
 .footer-spacing1{
     margin: 20px;
+    background-color: #ffffff;
+    color: #ffffff;
 }
 .mas-de-mi{
     margin: 0px 35px;
