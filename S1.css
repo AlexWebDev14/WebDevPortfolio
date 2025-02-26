@@ -88,7 +88,8 @@
   .intro-section {
     position: relative; /* Asegúrate de que la sección contenedora tenga una posición relativa */
     overflow: hidden; /* Evita que el pseudo-elemento se desborde */
-    height: 400px;
+    height: auto;
+    min-height: 400px;
   
 
 }
@@ -114,9 +115,9 @@
     display: flex; /* Activa Flexbox */
     align-items: center; /* Alinea los elementos verticalmente */
     justify-content: flex-start; /* Alinea los elementos horizontalmente a la izquierda */
-    padding: 20px;
+    padding: 10px;
     color: white;
-    font-size: 20px;
+    font-size: 19px;
 }
 
 .profile-img {
@@ -126,8 +127,8 @@ min-width: 20px;
     height: auto; /* Ajusta el tamaño de la imagen */
     margin-right: 25px; 
     margin-top: 42px;
-    margin-left: 40px;
-    padding-left: 40px;
+    margin-left: 20px;
+    padding-left: 20px;
     /* Elimina el margin-top porque ahora la alineación vertical la controla flexbox */
 }
 
@@ -216,6 +217,7 @@ min-width: 20px;
     margin-bottom: 18px;
     border-radius: 15px;
     margin-left: 50px;
+    
 }
 .evidencia2{
     padding: 10px 15px;
@@ -276,6 +278,7 @@ font-weight: bold;
     margin-right: 15px;
 }
 .infoconta{
+    align-items: center;
     width: 100%;
     background-color: #d4d4d4;
     padding-top: 30px;
