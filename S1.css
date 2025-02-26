@@ -89,7 +89,7 @@
     position: relative; /* Asegúrate de que la sección contenedora tenga una posición relativa */
     overflow: hidden; /* Evita que el pseudo-elemento se desborde */
     height: auto;
-    min-height: 400px;
+
   
 
 }
@@ -118,6 +118,7 @@
     padding: 10px;
     color: white;
     font-size: 19px;
+    padding-bottom: 46px;
 }
 
 .profile-img {
