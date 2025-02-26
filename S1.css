@@ -10,7 +10,8 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-   
+   align-items: center;
+   justify-content: center;
     }
 
     @font-face {
@@ -279,8 +280,8 @@ font-weight: bold;
     margin-right: 15px;
 }
 .contactwo{
-    align-items: center;
     justify-content: center;
+    align-items: normal;
 }
 .infoconta{
     align-items: center;
