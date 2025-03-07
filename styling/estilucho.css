@@ -15,12 +15,9 @@ html, body {
 }
 @font-face {
     font-family: Merriweather-Bold;
-    src: url(fonts/Merriweather-Bold.ttf);
+    src: url(../fonts/Merriweather-Bold.ttf);
 }
-@font-face {
-    font-family: Clint Marker;
-    src: url(fonts/Clint\ Marker.ttf);
-}
+
 
 body {
     background-image: url("../IMG/espacium.jpg");
@@ -63,7 +60,7 @@ body::before {
 
 .emmyL{
     text-align: center;
-    font-size: 41px;
+    font-size: 40px;
     text-decoration: none;
     font-weight: bold;
 }
@@ -198,8 +195,7 @@ box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
 }
 
 .botonesIG:active{
-    background-color: rgb(202, 2, 139); 
-    box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.6);
+
     transform: scale(0.98);
 }
 .botonestwish{
@@ -226,8 +222,6 @@ box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
 }
 
 .botonestwish:active{
-    background-color: rgb(202, 2, 139); 
-    box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.6);
     transform: scale(0.98);
 }
 .imageniwitwish{
@@ -259,8 +253,6 @@ box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
     background-color:  rgba(228, 116, 250, 0.351);
 }
 .botonesYT:active{
-    background-color: rgb(255, 205, 205); 
-    box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.6);
     transform: scale(0.98);
 }
 .imageniwiYT{
@@ -298,8 +290,6 @@ box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
     background-color:  rgba(228, 116, 250, 0.351);
 }
 .botonesMPago:active{
-    background-color: #0388bd;
-    box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.6);
     transform: scale(0.98);
 }
 .botonesAmazon {
@@ -315,7 +305,6 @@ box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
     margin: 20px 150px;
     width: auto;
     border-radius: 20px;
-
     background-color: transparent;
     text-shadow: rgba(239, 21, 255, 1);
     color: #ff3bef;
@@ -326,8 +315,6 @@ box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
     background-color:  rgba(228, 116, 250, 0.351);
 }
 .botonesAmazon:active{
-    background-color:  #cdcaca;
-    box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.6);
     transform: scale(0.98);
 }
 .imageniwiAmazon{
@@ -369,8 +356,6 @@ box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
     background-color:  rgba(228, 116, 250, 0.351);
 }
 .botonesPaypal:active{
-    background-color:  #cdcaca;
-    box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.6);
     transform: scale(0.98);
 }
 .foot{
