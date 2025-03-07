@@ -48,7 +48,7 @@ body::before {
 }
 
 .logo{
-    margin-top: 35px;
+    margin-top: 55px;
     max-width: 290px;
     height: auto;
     text-align: center;
@@ -61,28 +61,15 @@ body::before {
     border-radius: 250px; 
 }
 
-.LX{
+.emmyL{
     text-align: center;
     font-size: 41px;
     text-decoration: none;
     font-weight: bold;
 }
 
-.Lexsound:hover{
-        font-family: Clint Marker;
-        text-transform: uppercase;
-        font-size: 43px;
-        letter-spacing: 0.061em;
-    
-}
 
-.S:hover{
-    font-family: Clint Marker;
-    color: rgb(130, 44, 43);
-    text-transform: uppercase;
-    font-size: 52px;
-    letter-spacing: 0.061em;
-}
+
 .saluu{
     font-size: 20px;
     font-weight: bold;
@@ -91,48 +78,13 @@ body::before {
     font-weight: bold;
 }
 
-.botonsiwi {
-    min-width: 212px;
-    max-width: 1220px;
-    cursor: pointer;
-    display: flex;
-    align-items: center; /* Centra verticalmente */
-    justify-content: center; /* Centra horizontalmente */
-    text-decoration: none; /* Quita el subrayado del enlace */
-    padding: 15px 5px;
-    font-size: 19px;
-    text-align: left;
-    color: rgba(0, 0, 0, 1);
-    background-color: rgb(247, 238, 238);
-    border: none;
-    border-radius: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4), 0px -1px 1px rgba(0, 0, 0, 0.722);
-    width: auto;
-    margin: 20px auto; /* Asegura que el botón esté centrado */
-    transition: background-color 0.10s;
-}
-.botonsiwi:hover {
-    background-color: #e8dfdf;
-}
-.botonsiwi:active{
-    background-color: #c4bbbb; 
-    box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.6); /* Efecto presionado */
-    transform: scale(0.98);
-}
+
 
 .links {
     margin-top: 41px;
     text-align: center;
 }
-.portfolio{
-    background-color: rgba(92, 64, 51, 0.85);
-    padding: 10px 20px;
-    margin: 20px 85px; /* Margen vertical y horizontal */
-    border-radius: 15px;
-    width:auto;
-   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.722);
-   font-size: 16px;
-}
+
 .speech{
     font-size: 15px;
 }
@@ -141,56 +93,7 @@ body::before {
     height: 62px;
     margin-right: 40px;
 }
-.mimail{
-    text-align: center;
-    white-space: nowrap;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    min-width: 240px;             /* Establece un tamaño mínimo para el botón */
-    font-size: 19px;              /* Tamaño de fuente */
-    margin: 5px auto;             /* Centra el botón y le da margen arriba y abajo */
-    padding: 10px 25px;           /* Espaciado interno del botón */
-    width: auto;                  /* El ancho depende del contenido */
-    max-width: 250px;             /* Establece el ancho máximo */
-    transition: 0.2s;             /* Añade una transición suave para el hover */
- /* Asegura que el botón se ajuste al contenido */
-}
-.mimail:hover{
-    background: rgba(50, 50, 50, 0.6);  /* Efecto de fondo semi-transparente */
-  border: 2px solid #fff;              /* Borde blanco al hacer hover */
-  color: #fff;                         /* Texto blanco al hacer hover */
-  margin: 5px auto;                    /* Mantén el margen automático para centrarlo */
-  padding: 10px 25px;                  /* Espaciado interno del botón */
-  width: auto;                         /* El ancho depende del contenido */
-  max-width: 250px;
-    border-radius: 8px; 
-}
 
-.mimail img{
-    margin-right: 7px;
-    filter:  invert(100%);
-    max-width: 42px;
-    vertical-align: -8px;
-}
-.mimail:active{
-    transform: scale(0.98);
-}
-.nota{
-    line-height: 1.2em;
-    font-size: 16px;
-    border-left: 8px solid #d32f2f; /* Rojo oscuro */
-    padding-left: 10px;
-    font-style: italic;
-    display: block;  /* Asegura que ocupe una línea completa */
-    margin: 10px 0;
-}
-.notiwi{
-    max-width: 600px; /* Ajusta el ancho según lo necesites */
-    margin: 0 auto;  /* Centra el contenedor si es necesario */
-}
 .socials{
     display: block;
 
@@ -198,19 +101,21 @@ body::before {
 
 .botonesX{
 /*padding: 10px 5px;*/
+min-width: 225px;
 cursor: pointer;
-background-color: transparent;
 display: flex;
 align-items: center; /* Centra verticalmente */
 justify-content: center;
 text-decoration: none;
-padding: 12px 5px;
-font-size: 20px;
-font-weight: bold;
+padding: 10px 5px;
+font-size: 21px;
 text-align: left;
 margin: 20px 150px;
 width: auto;
 border-radius: 20px;
+
+background-color: transparent;
+
 text-shadow: rgba(239, 21, 255, 1);
 color: #ff3bef;
 border: 2px solid rgb(208, 0, 255); /* Borde del color deseado */
@@ -220,9 +125,7 @@ box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
     background-color:  rgba(228, 116, 250, 0.351);
 }
 .botonesX:active{
-  
-    box-shadow: inset 0px 3px 6px rgba(130, 130, 130, 0.6); /* Efecto presionado */
-    transform: scale(0.98);
+     transform: scale(0.98);
 }
 
 .imageniwi{
@@ -234,19 +137,19 @@ box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
 
 .botonesTikitok{
     /*padding: 10px 5px;*/
+    min-width: 225px;
     cursor: pointer;
-    background-color: transparent;
     display: flex;
     align-items: center; /* Centra verticalmente */
     justify-content: center;
     text-decoration: none;
-    padding: 12px 5px;
-    font-size: 20px;
-    font-weight: bold;
+    padding: 10px 5px;
+    font-size: 21px;
     text-align: left;
     margin: 20px 150px;
     width: auto;
     border-radius: 20px;
+     background-color: transparent;
     text-shadow: rgba(239, 21, 255, 1);
     color: #ff3bef;
     border: 2px solid rgb(208, 0, 255); /* Borde del color deseado */
@@ -262,7 +165,6 @@ box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
         background-color:  rgba(228, 116, 250, 0.351);
     }
     .botonesTikitok:active{
-        box-shadow: inset 0px 3px 6px rgba(130, 130, 130, 0.6);
         transform: scale(0.98);
     }
 
@@ -273,20 +175,19 @@ box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
 }
 
 .botonesIG{
-/*padding: 10px 5px;*/
-cursor: pointer;
+    min-width: 225px;
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center;
+    text-decoration: none;
+    padding: 10px 5px;
+    font-size: 21px;
+    text-align: left;
+    margin: 23px 150px;
+    width: auto;
+    border-radius: 20px;
 background-color: transparent;
-display: flex;
-align-items: center; /* Centra verticalmente */
-justify-content: center;
-text-decoration: none;
-padding: 12px 5px;
-font-size: 20px;
-font-weight: bold;
-text-align: left;
-margin: 20px 150px;
-width: auto;
-border-radius: 20px;
 text-shadow: rgba(239, 21, 255, 1);
 color: #ff3bef;
 border: 2px solid rgb(208, 0, 255); /* Borde del color deseado */
@@ -297,35 +198,68 @@ box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
 }
 
 .botonesIG:active{
-    
+    background-color: rgb(202, 2, 139); 
     box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.6);
     transform: scale(0.98);
 }
-
-.botonesYT{
+.botonestwish{
+    min-width: 225px;
     cursor: pointer;
-    background-color: transparent;
     display: flex;
     align-items: center; /* Centra verticalmente */
     justify-content: center;
     text-decoration: none;
-    padding: 12px 5px;
-    font-size: 20px;
-    font-weight: bold;
+    padding: 10px 5px;
+    font-size: 21px;
+    text-align: left;
+    margin: 23px 150px;
+    width: auto;
+    border-radius: 20px;
+background-color: transparent;
+text-shadow: rgba(239, 21, 255, 1);
+color: #ff3bef;
+border: 2px solid rgb(208, 0, 255); /* Borde del color deseado */
+box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
+}
+.botonestwish:hover {
+    background-color:  rgba(228, 116, 250, 0.351);
+}
+
+.botonestwish:active{
+    background-color: rgb(202, 2, 139); 
+    box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.6);
+    transform: scale(0.98);
+}
+.imageniwitwish{
+    max-width: 57px;
+    margin: 20px 20px; 
+    filter: invert(0.65) sepia(100%) hue-rotate(244deg) saturate(500%);
+}
+.botonesYT{
+    min-width: 225px;
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center;
+    text-decoration: none;
+    padding: 10px 5px;
+    font-size: 21px;
     text-align: left;
     margin: 20px 150px;
     width: auto;
     border-radius: 20px;
+    background-color: transparent;
     text-shadow: rgba(239, 21, 255, 1);
     color: #ff3bef;
     border: 2px solid rgb(208, 0, 255); /* Borde del color deseado */
     box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
 }
+
 .botonesYT:hover {
     background-color:  rgba(228, 116, 250, 0.351);
 }
 .botonesYT:active{
-
+    background-color: rgb(255, 205, 205); 
     box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.6);
     transform: scale(0.98);
 }
@@ -341,19 +275,19 @@ box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
     filter: hue-rotate(428deg) saturate(100%);
 }
 .botonesMPago{
+    min-width: 225px;
     cursor: pointer;
-    background-color: transparent;
     display: flex;
     align-items: center; /* Centra verticalmente */
     justify-content: center;
     text-decoration: none;
-    padding: 8px 5px;
-    font-size: 20px;
-    font-weight: bold;
+    padding: 9px 5px;
+    font-size: 21px;
     text-align: left;
     margin: 20px 150px;
     width: auto;
     border-radius: 20px;
+    background-color: transparent;
     text-shadow: rgba(239, 21, 255, 1);
     color: #ff3bef;
     border: 2px solid rgb(208, 0, 255); /* Borde del color deseado */
@@ -364,23 +298,25 @@ box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
     background-color:  rgba(228, 116, 250, 0.351);
 }
 .botonesMPago:active{
+    background-color: #0388bd;
     box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.6);
     transform: scale(0.98);
 }
 .botonesAmazon {
+    min-width: 225px;
     cursor: pointer;
-    background-color: transparent;
     display: flex;
     align-items: center; /* Centra verticalmente */
     justify-content: center;
     text-decoration: none;
-    padding: 29px 5px;
-    font-size: 20px;
-    font-weight: bold;
+    padding: 25px 5px;
+    font-size: 21px;
     text-align: left;
     margin: 20px 150px;
     width: auto;
     border-radius: 20px;
+
+    background-color: transparent;
     text-shadow: rgba(239, 21, 255, 1);
     color: #ff3bef;
     border: 2px solid rgb(208, 0, 255); /* Borde del color deseado */
@@ -390,6 +326,7 @@ box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
     background-color:  rgba(228, 116, 250, 0.351);
 }
 .botonesAmazon:active{
+    background-color:  #cdcaca;
     box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.6);
     transform: scale(0.98);
 }
@@ -397,6 +334,7 @@ box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
     max-width: 75px;
     margin: 18px 18px 18px 0px ;
     filter: hue-rotate(2420deg) saturate(100%);
+    padding: 10px 0px;
 }
 
 .imageniwiPaypal{
@@ -408,29 +346,30 @@ box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
 
 }
 .botonesPaypal {
-    text-shadow: rgba(239, 21, 255, 1);
+    min-width: 225px;
     cursor: pointer;
-    background-color: transparent;
-    color: #ff3bef;
     display: flex;
     align-items: center; /* Centra verticalmente */
     justify-content: center;
     text-decoration: none;
-    padding: 18px 5px;
-    font-weight: bold;
-    font-size: 20px;
+    padding: 10px 5px;
+    font-size: 21px;
     text-align: left;
     margin: 20px 150px;
     width: auto;
     border-radius: 20px;
+    background-color: transparent;
     border: 2px solid rgb(208, 0, 255); /* Borde del color deseado */
     box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
+    text-shadow: rgba(239, 21, 255, 1);
+    color: #ff3bef;
 }
 
 .botonesPaypal:hover {
     background-color:  rgba(228, 116, 250, 0.351);
 }
 .botonesPaypal:active{
+    background-color:  #cdcaca;
     box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.6);
     transform: scale(0.98);
 }
