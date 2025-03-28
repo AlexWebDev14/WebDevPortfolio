@@ -13,12 +13,14 @@ html, body {
    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
 
 }
+/*
 @font-face {
-    font-family: Merriweather-Bold;
+   font-family: Merriweather-Bold;
     src: url(../fonts/Merriweather-Bold.ttf);
+
 }
 
-
+*/
 body {
     background-image: url("../IMG/espacium.jpg");
     width: 100%;
@@ -75,8 +77,6 @@ body::before {
     font-weight: bold;
 }
 
-
-
 .links {
     margin-top: 41px;
     text-align: center;
@@ -85,6 +85,7 @@ body::before {
 .speech{
     font-size: 15px;
 }
+
 .logolinks {
     max-width: 62px;
     height: 62px;
@@ -109,10 +110,8 @@ font-size: 21px;
 text-align: left;
 margin: 20px 150px;
 width: auto;
-border-radius: 20px;
-
+border-radius: 80px;
 background-color: transparent;
-
 text-shadow: rgba(239, 21, 255, 1);
 color: #ff3bef;
 border: 2px solid rgb(208, 0, 255); /* Borde del color deseado */
@@ -145,25 +144,26 @@ box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
     text-align: left;
     margin: 20px 150px;
     width: auto;
-    border-radius: 20px;
+    border-radius: 80px;
      background-color: transparent;
     text-shadow: rgba(239, 21, 255, 1);
     color: #ff3bef;
     border: 2px solid rgb(208, 0, 255); /* Borde del color deseado */
     box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
-    }
+}
+
 .imageniwiTikitok{
-        max-width: 68px;
-        margin: 20px 10px; 
-        filter: hue-rotate(428deg) saturate(100%);
-        filter: invert(0.40) sepia(100%) hue-rotate(244deg) saturate(500%);
-    }
-    .botonesTikitok:hover {
-        background-color:  rgba(228, 116, 250, 0.351);
-    }
-    .botonesTikitok:active{
-        transform: scale(0.98);
-    }
+    max-width: 68px;
+    margin: 20px 10px; 
+    filter: hue-rotate(428deg) saturate(100%);
+    filter: invert(0.40) sepia(100%) hue-rotate(244deg) saturate(500%);
+}
+.botonesTikitok:hover {
+    background-color:  rgba(228, 116, 250, 0.351);
+}
+.botonesTikitok:active{
+    transform: scale(0.98);
+}
 
 .imageniwiIG{
     max-width: 53px;
@@ -183,7 +183,7 @@ box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
     text-align: left;
     margin: 23px 150px;
     width: auto;
-    border-radius: 20px;
+    border-radius: 80px;
 background-color: transparent;
 text-shadow: rgba(239, 21, 255, 1);
 color: #ff3bef;
@@ -210,7 +210,7 @@ box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
     text-align: left;
     margin: 23px 150px;
     width: auto;
-    border-radius: 20px;
+    border-radius: 80px;
 background-color: transparent;
 text-shadow: rgba(239, 21, 255, 1);
 color: #ff3bef;
@@ -241,7 +241,7 @@ box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
     text-align: left;
     margin: 20px 150px;
     width: auto;
-    border-radius: 20px;
+    border-radius: 80px;
     background-color: transparent;
     text-shadow: rgba(239, 21, 255, 1);
     color: #ff3bef;
@@ -278,7 +278,7 @@ box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
     text-align: left;
     margin: 20px 150px;
     width: auto;
-    border-radius: 20px;
+    border-radius: 80px;
     background-color: transparent;
     text-shadow: rgba(239, 21, 255, 1);
     color: #ff3bef;
@@ -304,7 +304,7 @@ box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
     text-align: left;
     margin: 20px 150px;
     width: auto;
-    border-radius: 20px;
+    border-radius: 80px;
     background-color: transparent;
     text-shadow: rgba(239, 21, 255, 1);
     color: #ff3bef;
@@ -344,7 +344,7 @@ box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
     text-align: left;
     margin: 20px 150px;
     width: auto;
-    border-radius: 20px;
+    border-radius: 80px;
     background-color: transparent;
     border: 2px solid rgb(208, 0, 255); /* Borde del color deseado */
     box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
