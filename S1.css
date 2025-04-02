@@ -32,6 +32,8 @@
     width: 100%; /* Ocupa todo el ancho de la pantalla */
     z-index: 3; /* Se mantiene por encima de otros elementos */
     white-space: normal;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+
 }
 
 .nav-left {
@@ -316,6 +318,11 @@ font-weight: bold;
    font-weight: bold;
     margin: 10px 66px 30px 66px;
 }
+.contacexp{
+    text-align: center;
+    justify-content: center;
+    margin-left: auto; margin-right: auto;
+}
 .correolis{
     
  margin-left: 60px;
@@ -373,6 +380,10 @@ font-weight: bold;
     filter: invert(1); /* Convierte la imagen negra a blanca */
     object-fit: contain; /* Evita distorsión */
     margin: 0;
+}
+.portafo h3{
+    text-align: center;
+    font-size: 1.23rem;
 }
 
 
