@@ -385,7 +385,241 @@ font-weight: bold;
     text-align: center;
     font-size: 1.23rem;
 }
+@media (max-width: 400px) {
+    /* ===== ESTILOS GENERALES/COMPARTIDOS ===== */
+    body {
+        padding: 15px 0 0 0;
+    }
+    
+    /* Navbar (usando el estilo del primer media query) */
+    nav {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    
+    .nav-right {
+        order: 1;
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+        padding-top: 5px;
+        padding-bottom: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nav-left {
+        order: 2;
+        width: 100%;
+        justify-content: center;
+        gap: 0;
+        padding: 2px 0 0 0;
+    }
+    
+    .nav-left a {
+        font-size: 0.85em;
+        padding: 5px 10px;
+        border-left: 1px solid #fff;
+        margin-left: 0;
+    }
+    
+    .nav-left a:first-child {
+        justify-content: center;
+        text-align: center;
+        margin-left: 0;
+        border-left: none;
+    }
+    
+    .separator {
+        height: 100px;
+    }
+    
+    /* ===== PÁGINA INICIO ===== */
+    .intro-content {
+        flex-direction: column;
+        padding: 10px;
+        font-size: 16px;
+    }
+    
+    .profile-img {
+        max-width: 140px;
+        margin: 20px auto;
+        margin-bottom: 10px;
+    }
+    
+    .intro-content p {
+        margin: 10px;
+        margin-bottom: 15px;
+        font-size: 0.8em;
+        text-align: justify;
+    }
+    
+    .conteniwi {
+        padding-top: 25px;
+        padding-bottom: 30px;
+    }
+    
+    .mas-de-mi, .mas-de-mi2 {
+        margin: 0 15px;
+        text-align: center;
+    }
+    
+    .mas-de-mi p, .mas-de-mi2 p {
+        font-size: 0.85em;
+        text-align: justify;
+    }
+    
+    .mas-de-mi2 {
+        margin-top: 30px;
+    }
+    
+    .payutu {
+        padding: 8px 20px;
+        font-size: 0.8em;
+    }
+    
+    .footer-spacing, .footer-spacing1 {
+        padding: 10px;
+    }
+    
+    /* ===== PÁGINA PORTAFOLIO ===== */
+    .portafo {
+        padding: 25px 10px;
+    }
+    
+    .tituliwi h2 {
+        font-size: 1.5rem;
+        margin: 0 10px 15px 10px;
+    }
+    
+    .tituliwi h3 {
+        font-size: 1.2rem;
+    }
+    
+    .tituliwi p {
+        margin: 0 15px 20px 15px;
+        font-size: 0.85em;
+        text-align: justify;
+        line-height: 1.5;
+    }
+    
+    .evidencia1 {
+        text-align: center;
+        width: auto;
+        display: block;
+        margin: 8px auto !important;
+        padding: 0 !important;
+        border: none !important;
+        background: transparent !important;
+    }
+    
+    .primerboton, .mipag {
+        width: 85%;
+        max-width: 260px;
+        margin: 8px auto !important;
+        padding: 10px 5px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 0.85em;
+        white-space: nowrap;
+    }
+    
+    .emmy1, .miimag {
+        max-width: 28px !important;
+        margin: 0 8px 0 0 !important;
+        flex-shrink: 0;
+    }
+    
+    .primerboton span, .mipag span {
+        font-size: 0.82em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        flex-grow: 1;
+    }
+    
+    .obvio {
+        margin: 0 15px;
+        text-align: center;
+    }
+    
+    .obvio p {
+        font-size: 0.85em;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    /* ===== PÁGINA CONTACTO ===== */
+    .infoconta {
+        padding: 20px 10px;
+    }
+    
+    .infoconta h2 {
+        font-size: 1.5rem;
+        margin: 0 15px 15px 15px;
+    }
+    
+    .infoconta p,
+    .contacexp,
+    .teleg p {
+        margin: 10px 20px 20px 20px !important;
+        font-size: 0.85em;
+        text-align: center !important;
+        line-height: 1.5;
+    }
+    
+    .correolis, 
+    .correolis2 {
+        display: block;
+        width: 80%;
+        max-width: 220px;
+        margin: 15px auto !important;
+        padding: 12px 20px !important;
+        text-align: center;
+        box-sizing: border-box;
+    }
+      .correolis2 {
+        display: inline-flex !important;
+        align-items: center;       
+        width: 90%;
+        max-width: 240px;
+        flex-direction: row;
+        justify-content: center;
+        gap: 12px; /* Espacio entre ícono y texto aumentado */
+        padding: 12px 20px 12px 15px !important; /* Más padding izquierdo */
+    }
+    
+    .tgrm {
+       /*width: 26px;*/
+        margin: 0 !important; /* Reset de márgenes */
+        flex-shrink: 0; /* Evita que se encoja */
+        margin-right: 0 !important; /* Eliminamos margen derecho para usar gap */
+        margin-left: 5px; /* Pequeño margen izquierdo */
+        width: 24px;
+    }
+    
+    .correolis2 span {
+        white-space: normal; /* Permite salto de línea natural */
+        text-align: center;
+        flex-grow: 0; /* Evita que ocupe espacio extra */
+    }
 
-
-
-
+    .tonote {
+        text-align: center;
+        border-left: none;
+        padding-left: 0;
+        margin: 20px 15px 0 15px;
+        font-size: 0.8em;
+    }
+    
+    .corretext, 
+    .teleg {
+        text-align: center !important;
+        align-items: center !important;
+        margin-right: 0 !important;
+    }
+}

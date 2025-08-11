@@ -361,3 +361,49 @@ box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
 .foot{
     margin: 121px;
 }
+
+@media only screen and (max-width: 400px) {
+    /* Ajustes para el encabezado */
+    .logo {
+        max-width: 200px;
+        margin-top: 30px;
+    }
+    
+    .emmyL {
+        font-size: 30px;
+    }
+    
+    /* Ajustes para el texto de bienvenida */
+    .saluu {
+        font-size: 16px;
+        padding: 0 15px;
+    }
+    
+    .check {
+        font-size: 18px;
+    }
+    
+    /* Ajustes generales para todos los botones */
+    .socials a {
+        min-width: 80% !important;
+        margin: 10px auto !important;
+        font-size: 16px !important;
+        padding: 8px 5px !important;
+    }
+    
+    /* Ajustes para las imágenes dentro de los botones */
+    .socials img {
+        max-width: 40px !important;
+        margin: 5px 10px !important;
+    }
+    
+    /* Ajuste especial para Amazon que tiene más padding */
+    .botonesAmazon {
+        padding: 15px 5px !important;
+    }
+    
+    /* Reducir el margen inferior */
+    .foot {
+        margin: 50px !important;
+    }
+}
