@@ -1,0 +1,314 @@
+* {
+    position: relative; /* Todo el contenido debe estar por encima de la capa */
+    z-index: 2;
+    text-align: center;
+    color: #FFFFFF;
+   font-family:'Gill Sans';
+   text-shadow:3px 3px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+h1, h2 p{
+    font-family: 'Gill Sans';
+}
+.brand-name{
+    font-size: 2.3em;
+}
+.welcome-note1, .welcome-note2 {
+    font-size: 1.3em;
+}
+.section-callout{
+    font-size: 1.6em;
+}
+.welcome-note1{
+    display: block;
+
+}
+.welcome-note1 {
+    display: none;
+}
+
+/* Muestra welcome-note2 por defecto (para móvil/tablet) */
+.welcome-note2 {
+    display: block;
+}
+
+body{
+    background-color: rgb(205, 157, 98);
+}
+.brand-sigil{
+    margin-top: 55px;
+    max-width: 290px;
+    height: auto;
+    text-align: center;
+box-shadow: 
+    0 0 15px 5px rgba(245, 222, 179, 0.5), /* Wheat */
+    0 0 20px 10px rgba(250, 235, 215, 0.4), /* AntiqueWhite */
+    0 0 30px 10px rgba(255, 248, 220, 0.3), /* Cornsilk */
+    0 0 15px 5px rgba(245, 222, 179, 0.5) inset,
+    0 0 20px 10px rgba(250, 235, 215, 0.4) inset, 
+    0 0 30px 10px rgba(255, 248, 220, 0.3) inset;
+    border-radius: 250px; 
+}
+
+a{
+       /*padding: 10px 5px;*/
+    min-width: 225px;
+    max-height: 100px;
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center;
+    text-decoration: none;
+    padding: 10px 5px;
+    font-size: 21px;
+    text-align: left;
+    margin: 20px 150px;
+    width: auto;
+    border-radius: 80px;
+     background-color: transparent;
+
+}
+.icon-tiktok .icon-x .icon-instagram{
+    box-sizing: border-box;
+}
+/* Mantén todo lo anterior que ya tienes */
+
+/* Agrega estas reglas específicas para los enlaces y sus imágenes */
+a.orbit-link {
+    text-align: center;
+    padding: 10px 20px;
+    min-width: 225px;
+    height: 66px; /* Altura fija para consistencia */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Alinear contenido al inicio */
+    text-decoration: none;
+    font-size: 21px;
+    margin: 20px auto; /* Centrado automático horizontal */
+    width: 80%; /* Ancho relativo */
+    max-width: 900px; /* Ancho máximo */
+    border-radius: 80px;
+    background-color: rgb(137, 90, 32);
+    text-shadow: 0 0 10px rgb(61, 61, 61);
+    color: #ffffff;
+    box-shadow: 0 0 8px rgb(43, 43, 43);
+    gap: 15px; /* Espacio entre imagen y texto */
+}
+a.orbit-link :active{
+    transform: scale(0.97);
+    box-shadow: 0 0 4px rgb(43, 43, 43);
+    background-color:  rgb(105, 68, 24);
+    transition: transform 0.1s ease;
+}
+/* Estilo específico para las imágenes dentro de los botones */
+.orbit-link img {
+    width: 40px; /* Tamaño fijo para todas las imágenes */
+    height: 40px;
+    object-fit: contain; /* Mantiene la proporción sin distorsión */
+    display: block;
+   /* filter: drop-shadow(0 0 3px rgba(233, 32, 251, 0.7));*/
+}
+
+
+
+/* Si quieres que los botones cambien al pasar el mouse */
+a.orbit-link:hover {
+    background-color: rgb(160, 113, 32);
+    box-shadow: 0 0 15px rgb(211, 160, 68);
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+@media (min-width: 1024px) {
+
+    body {
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-items: center;
+        padding: 0 5vw;
+        margin: 0;
+    }
+
+    /* ===== COLUMNA IZQUIERDA - REORGANIZADA ===== */
+    /* Hacemos que #hero-frame sea el contenedor de TODO el lado izquierdo */
+    #hero-frame {
+        grid-column: 1;
+        grid-row: 1;
+        width: 100%;
+        max-width: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        gap: 10px; /* Espacio controlado entre brand-crown y welcome-note */
+    }
+
+    /* Eliminamos #intro-whisper como contenedor separado */
+    #intro-whisper {
+        width: 100%;
+        margin-top: 0; /* CRUCIAL: elimina margen superior */
+        padding-top: 0;
+    }
+
+    /* El contenedor del logo y nombre */
+    .brand-crown {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 5px;
+        margin-bottom: 0; /* Aseguramos que no haya margen inferior */
+    }
+
+    /* El logo */
+    .brand-sigil {
+        margin-top: 0;
+        max-width: 240px;
+        width: 90%;
+    }
+
+    /* El título */
+    .brand-name {
+        font-size: 2.3em;
+        margin: 0;
+        padding: 0;
+        line-height: 1.1;
+    }
+
+    /* El texto de bienvenida - AHORA DIRECTAMENTE DESPUÉS DE .brand-crown */
+    .welcome-note1 {
+        font-size: 1.3em;
+        margin: 0; /* CRUCIAL: elimina todos los márgenes */
+        padding: 0;
+        line-height: 1.3;
+        max-width: 91%;
+        text-align: center;
+    }
+     .welcome-note1 {
+        display: block;
+    }
+    
+    .welcome-note2 {
+        display: none;
+    }
+
+    /* ===== SI SIGUE HABIENDO ESPACIO, USA ESTA VERSIÓN EXTRA COMPACTA ===== */
+    
+    #hero-frame {
+        gap: 15px;  // Menor espacio entre secciones
+    }
+    
+    .brand-crown {
+        gap: 15px;  // Logo y nombre casi pegados
+    }
+    
+    .welcome-note1 {
+        margin-top: 5px;  // Sube ligeramente el texto
+    }
+    
+
+    /* ===== COLUMNA DERECHA ===== */
+    .link-constellation {
+        grid-column: 2;
+        grid-row: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 400px;
+        height: 100%;
+        gap: 8px;
+    }
+
+    .section-callout {
+        font-size: 1.6em;
+        margin-bottom: 8px;
+        padding: 0;
+        line-height: 1.2;
+    }
+
+    a.orbit-link {
+        width: 90%;
+        margin: 0;
+        padding: 10px 15px;
+        height: 60px;
+    }
+
+    .orbit-link img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .page-tail {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+        height: 10px;
+    }
+}
+
+/* ===== MEDIA QUERY PARA MÓVILES PEQUEÑOS (≤400px) ===== */
+@media (max-width: 400px) {
+    
+    /* Ajusta márgenes y padding general */
+    body {
+        padding: 0 10px;
+    }
+    
+    /* Logo más pequeño */
+    .brand-sigil {
+        margin-top: 35px; /* Reduce margen superior */
+        max-width: 230px; /* Reduce tamaño del logo */
+    }
+    
+    /* Ajusta tamaños de fuente */
+    .brand-name {
+        font-size: 1.8em; /* Reduce tamaño del título */
+    }
+    
+    .welcome-note1, .welcome-note2 {
+        font-size: 1.1em; /* Reduce texto de bienvenida */
+        line-height: 1.3;
+    }
+    
+    .section-callout {
+        font-size: 1.4em; /* Reduce tamaño del subtítulo */
+    }
+       a.orbit-link:active {
+        transform: scale(0.97);
+    }
+    
+    /* Botones más compactos */
+    a.orbit-link {
+        min-width: 180px; /* Reduce ancho mínimo */
+        height: 55px; /* Reduce altura */
+        font-size: 18px; /* Reduce tamaño de texto */
+        margin: 15px auto; /* Reduce margen entre botones */
+        width: 90%; /* Ocupa más ancho disponible */
+        padding: 8px 15px; /* Reduce padding interno */
+        gap: 10px; /* Reduce espacio entre icono y texto */
+    }
+    
+    /* Iconos más pequeños */
+    .orbit-link img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    /* Ajusta los dos textos de bienvenida (oculta uno) */
+
+    /* Reduce márgenes de los enlaces base */
+    a {
+        margin: 20px 50px; /* Reduce márgenes laterales */
+    }
+    
+    /* Ajusta el break del texto si es necesario */
+    .welcome-note2 br {
+        display: none; /* Elimina salto de línea forzado */
+    }
+}
