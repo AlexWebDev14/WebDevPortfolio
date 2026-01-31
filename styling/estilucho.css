@@ -1,7 +1,6 @@
 html, body {
     height: 100%; /* Asegura que html y body cubran toda la pantalla */
-    margin: 0;
-    padding: 0;
+
 }
 
 * {
@@ -13,24 +12,24 @@ html, body {
    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
 
 }
-/*
+
 @font-face {
    font-family: Merriweather-Bold;
-    src: url(../fonts/Merriweather-Bold.ttf);
+    src:url(../fonts/Merriweather-Bold);
 
 }
 
-*/
+
 body {
-    background-image: url("../IMG/espacium.jpg");
-    width: 100%;
+    background-image: url("IMG/espacium.jpg");
+    width: auto;
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-size: cover; /* Escala la imagen para cubrir toda la página */
     background-position: center; /* Centra la imagen en la página */
     background-attachment: fixed; /* Hace que la imagen de fondo quede fija al hacer scroll */
     margin: 0; /* Elimina márgenes por defecto del body */
     padding: 0; /* Elimina padding por defecto del body */
-    height: 100vh;
+    height: auto;
     position: relative;
     
 }
@@ -93,23 +92,27 @@ body::before {
 }
 
 .socials{
-    display: block;
+      display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
 
 }
 
 .botonesX{
 /*padding: 10px 5px;*/
-min-width: 225px;
+min-width: 205px;
 cursor: pointer;
 display: flex;
 align-items: center; /* Centra verticalmente */
 justify-content: center;
 text-decoration: none;
-padding: 10px 5px;
+padding: 6px 5px;
 font-size: 21px;
 text-align: left;
-margin: 20px 150px;
-width: auto;
+margin: 10px 0;
+max-width: 860px;
+width: 100%;
 border-radius: 80px;
 background-color: transparent;
 text-shadow: rgba(239, 21, 255, 1);
@@ -132,18 +135,18 @@ box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
 }
 
 .botonesTikitok{
-    /*padding: 10px 5px;*/
-    min-width: 225px;
+    min-width: 205px;
     cursor: pointer;
     display: flex;
     align-items: center; /* Centra verticalmente */
     justify-content: center;
     text-decoration: none;
-    padding: 10px 5px;
+    padding: 6px 5px;
     font-size: 21px;
     text-align: left;
-    margin: 20px 150px;
-    width: auto;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 860px;
     border-radius: 80px;
      background-color: transparent;
     text-shadow: rgba(239, 21, 255, 1);
@@ -172,17 +175,18 @@ box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
 }
 
 .botonesIG{
-    min-width: 225px;
+    min-width: 205px;
     cursor: pointer;
     display: flex;
     align-items: center; /* Centra verticalmente */
     justify-content: center;
     text-decoration: none;
-    padding: 10px 5px;
+    padding: 6px 5px;
     font-size: 21px;
     text-align: left;
-    margin: 23px 150px;
-    width: auto;
+    margin: 10px 0;
+    max-width: 860px;
+    width: 100%;
     border-radius: 80px;
 background-color: transparent;
 text-shadow: rgba(239, 21, 255, 1);
@@ -199,17 +203,18 @@ box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
     transform: scale(0.98);
 }
 .botonestwish{
-    min-width: 225px;
+    min-width: 205px;
     cursor: pointer;
     display: flex;
     align-items: center; /* Centra verticalmente */
     justify-content: center;
     text-decoration: none;
-    padding: 10px 5px;
+    padding: 6px 5px;
     font-size: 21px;
     text-align: left;
-    margin: 23px 150px;
-    width: auto;
+   margin: 10px 0;
+   width: 100%;
+    max-width: 860px;
     border-radius: 80px;
 background-color: transparent;
 text-shadow: rgba(239, 21, 255, 1);
@@ -230,17 +235,18 @@ box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
     filter: invert(0.65) sepia(100%) hue-rotate(244deg) saturate(500%);
 }
 .botonesYT{
-    min-width: 225px;
+    min-width: 205px;
     cursor: pointer;
     display: flex;
     align-items: center; /* Centra verticalmente */
     justify-content: center;
     text-decoration: none;
-    padding: 10px 5px;
+    padding: 6px 5px;
     font-size: 21px;
     text-align: left;
-    margin: 20px 150px;
-    width: auto;
+   margin: 10px 0;
+   width: 100%;
+    max-width: 860px;
     border-radius: 80px;
     background-color: transparent;
     text-shadow: rgba(239, 21, 255, 1);
@@ -267,17 +273,18 @@ box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
     filter: hue-rotate(428deg) saturate(100%);
 }
 .botonesMPago{
-    min-width: 225px;
+    min-width: 205px;
     cursor: pointer;
     display: flex;
     align-items: center; /* Centra verticalmente */
     justify-content: center;
     text-decoration: none;
-    padding: 9px 5px;
+    padding: 6px 5px;
     font-size: 21px;
     text-align: left;
-    margin: 20px 150px;
-    width: auto;
+   margin: 10px 0;
+   width: 100%;
+    max-width: 860px;
     border-radius: 80px;
     background-color: transparent;
     text-shadow: rgba(239, 21, 255, 1);
@@ -293,17 +300,18 @@ box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
     transform: scale(0.98);
 }
 .botonesAmazon {
-    min-width: 225px;
+    min-width: 205px;
     cursor: pointer;
     display: flex;
     align-items: center; /* Centra verticalmente */
     justify-content: center;
     text-decoration: none;
-    padding: 25px 5px;
+    padding: 15px 5px;
     font-size: 21px;
     text-align: left;
-    margin: 20px 150px;
-    width: auto;
+   margin: 10px 0;
+   width: 100%;
+    max-width: 860px;
     border-radius: 80px;
     background-color: transparent;
     text-shadow: rgba(239, 21, 255, 1);
@@ -333,7 +341,7 @@ box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
 
 }
 .botonesPaypal {
-    min-width: 225px;
+    min-width: 205px;
     cursor: pointer;
     display: flex;
     align-items: center; /* Centra verticalmente */
@@ -342,8 +350,9 @@ box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
     padding: 10px 5px;
     font-size: 21px;
     text-align: left;
-    margin: 20px 150px;
-    width: auto;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 860px;
     border-radius: 80px;
     background-color: transparent;
     border: 2px solid rgb(208, 0, 255); /* Borde del color deseado */
@@ -361,49 +370,77 @@ box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
 .foot{
     margin: 121px;
 }
-
-@media only screen and (max-width: 400px) {
-    /* Ajustes para el encabezado */
+@media (max-width: 400px) {
+    /* Reduce logo size */
     .logo {
         max-width: 200px;
-        margin-top: 30px;
+        margin-top: 25px;
     }
     
-    .emmyL {
-        font-size: 30px;
-    }
-    
-    /* Ajustes para el texto de bienvenida */
+    /* Reduce font sizes */
     .saluu {
-        font-size: 16px;
+        font-size: 15px;
         padding: 0 15px;
     }
     
     .check {
-        font-size: 18px;
+        font-size: 17px;
+        padding: 0 15px;
     }
     
-    /* Ajustes generales para todos los botones */
-    .socials a {
-        min-width: 80% !important;
-        margin: 10px auto !important;
-        font-size: 16px !important;
-        padding: 8px 5px !important;
+    /* FIX: Add padding to .socials container to prevent buttons from touching edges */
+    .socials {
+        padding: 0 15px;
+        box-sizing: border-box;
     }
     
-    /* Ajustes para las imágenes dentro de los botones */
-    .socials img {
-        max-width: 40px !important;
-        margin: 5px 10px !important;
+    /* FIX: Adjust all buttons with box-sizing and controlled width */
+    .botonesX,
+    .botonesTikitok,
+    .botonesIG,
+    .botonestwish,
+    .botonesYT,
+    .botonesMPago,
+    .botonesAmazon,
+    .botonesPaypal {
+        font-size: 15px;
+        padding: 8px 12px;
+        min-width: auto; /* Remove fixed min-width */
+        width: 100%; /* Still 100% but now of the padded container */
+        max-width: 100%;
+        border-radius: 40px;
+        box-sizing: border-box; /* Important: includes padding in width calculation */
+        margin: 8px 0; /* Reduce vertical margin */
     }
     
-    /* Ajuste especial para Amazon que tiene más padding */
-    .botonesAmazon {
-        padding: 15px 5px !important;
+    /* FIX: Reduce image sizes more */
+    .imageniwi,
+    .imageniwiTikitok,
+    .imageniwiIG,
+    .imageniwitwish,
+    .imageniwiYT,
+    .imageniwiMPago,
+    .imageniwiAmazon,
+    .imageniwiPaypal {
+        max-width: 35px;
+        margin: 0 8px 0 0; /* Reduced margins */
     }
     
-    /* Reducir el margen inferior */
+    /* Adjust specific image margins */
+    .imageniwiAmazon {
+        max-width: 45px;
+    }
+    
+    .imageniwiPaypal {
+        max-width: 40px;
+    }
+    
+    .imageniwiMPago {
+        max-width: 55px;
+    }
+    
+    /* Reduce footer margin */
     .foot {
-        margin: 50px !important;
+        margin: 40px;
     }
 }
