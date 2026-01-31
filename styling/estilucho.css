@@ -1,8 +1,3 @@
-html, body {
-    height: 100%; /* Asegura que html y body cubran toda la pantalla */
-
-}
-
 * {
     position: relative; /* Todo el contenido debe estar por encima de la capa */
     z-index: 2;
@@ -371,6 +366,7 @@ box-shadow: 0 0 8px rgb(233, 32, 251); /* Efecto de iluminación */
     margin: 121px;
 }
 @media (max-width: 400px) {
+
     /* Reduce logo size */
     .logo {
         max-width: 200px;
