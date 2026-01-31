@@ -21,7 +21,7 @@ html, body {
 
 
 body {
-    background-image: url("IMG/espacium.jpg");
+    background-image: url("../IMG/espacium.jpg");
     width: auto;
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-size: cover; /* Escala la imagen para cubrir toda la página */
