@@ -2,32 +2,37 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+  <title>CORETECH FORGE</title>
   <link href="S1.css" rel="stylesheet" >
-  <link rel="icon" href="IMG/portfoliofavicon.ico" type="image/x-icon">
-  <meta property="og:title" content="My Porfolio" />
-  <meta property="og:description" content="Check my portafolio! - Web Developer" />
+  <link rel="icon" href="IMG/favicon.ico" type="image/x-icon">
+  <meta property="og:title" content="CORETECH FORGE" />
+  <meta property="og:description" content="CORETECH FORGE: Computer repair services & Web Dev" />
   <meta property="og:image" content="https://alexwebdev14.github.io/WebDevPortfolio/IMG/myportfolium1.png" />
   <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
   <meta property="og:url" content="https://alexwebdev14.github.io/WebDevPortfolio/index.html" />
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="My Portfolio" />
+  <meta property="og:site_name" content="CORETECH FORGE" />
 </head>
 <body>
  
   <div>
   <!-- Barra de navegación -->
   <nav>
-   
-    <div class="nav-left">
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+    <div class="nav-left" id="nav-menu">
         <a href="#">Inicio</a>
-        <a href="pages/portafolio.html">Portafolio</a>
-        <a href="pages/contactame.html">Contáctame</a>
+          <a href="pages/taller.html">Workshop</a>
+        <a href="pages/portafolio.html">Web Dev</a>
+        <a href="pages/contactame.html">Contáctanos</a>
     </div>
     <div class="nav-right">
-      <h3> My Portfolio</h3> 
+    <img src="IMG/CF nav.png" alt="coretech " >
   </div>
 </nav>
   </div>
@@ -37,11 +42,10 @@
 <div class="intro-section">
   <div class="intro-content">
    
-      <img class="profile-img" src="IMG/logov.png" alt="Mi imagen de perfil">
-      <p>¡Hola! Puedes llamarme Alex, soy creador de contenido, guitarrista de sesión y Desarrollador Web.
-        <br><br>Como desarrollador web ofrezco mis servicios para desarrollar una página web tipo "link-in-bio" totalmente personalizada para otros creadores de contenido, donde pueden centralizar todos sus enlaces de sus redes sociales, página de donaciones, etc; y ¿sabes qué es lo mejor de esto? ¡Que puedo hacerlo por un pago único! Olvidate de suscripciónes mensuales que muchas plataformas te piden para tener tu página web tipo link-in-bio. 
-           <br><br>Si eres profesionista ¡puedo hacer un portafolio web digital para tí! ¿Quién necesita los Flyers digitales o las presentaciones en Canva... ¡cuando puedes tener una página web que funcione como tu portafolio digital de trabajo! <br><br>  ¡Explora la sección llamada "portafolio" para ver ejemplos de mi trabajo!
-      </p>
+      <img class="profile-img" src="IMG/CF logo.png" alt="coretech forge">
+      <p>En CORETECH FORGE transformamos tecnología e ideas en soluciones prácticas.<br> Ofrecemos servicios de reparación, mantenimiento y optimización de computadoras, así como desarrollo de páginas web para emprendedores, profesionales, creadores de contenido y pequeños negocios que buscan fortalecer su presencia digital.
+<br><br>
+Desde recuperar el rendimiento de una laptop hasta crear un espacio profesional donde puedas mostrar tu trabajo, servicios o proyectos, nuestro objetivo es ayudarte a aprovechar la tecnología de una forma útil, accesible y adaptada a tus necesidades.
   </div>
 </div>
 <!-- Espaciado al pie de la página -->
@@ -49,30 +53,40 @@
   <br>
 </div>
 <div class="conteniwi">
-<div class="mas-de-mi">
-  <h2>¿Quieres saber más de mí?</h2>
-    <p> si quieres saber más de mí como creador de contenido, te invito a <br>que veas mi contenido
-     en YouTube en mi canal llamado "LexSound"<br> donde subo covers instrumentales en guitarra eléctrica de diferentes géneros musicales.
+<div class="cards">
+  <h2>CORETECH FORGE<br>The Workshop</h2>
+    <p>Este es nuestro taller de mantenimiento y reparación de laptops.<br><br>
+      - Instalación de sistemas operativos y programas básicos.<br>
+       - Mantenimiento preventivo y correctivo.<br>
+       - reemplazo de piezas defectuosas.<br>
+       - optimización del sistema.<br>
+       - Clonación de disco<br>
+       -mejoras de hardware<br>
+       y más...<br><br>
+       Da click para saber más:
     <br><br></p>
-    <a href="https://alex1401-s.github.io/linkslexsound.github.io/" target="_blank" class="payutu">Mis enlaces</a>
+    <a href="pages/taller.html"  class="payutu">Workshop</a>
     <br>
 </div>
 
-<div class="mas-de-mi2">
-  <br><br>
-  <h2>¿Necesitas un guitarrista de sesión?</h2>
-    <p> Si te llamó la atención que yo soy guitarrista de sesión tienes suerte,
-      <br>¡yo ofrezco mis servicios de grabación de guitarras electricas/acústicas <br>para aquellos artistas que necesitan de un guitarrista en sus canciones! <br>¡Tú me dices qué idea tienes para tu canción y yo la interpreto y grabo por tí!
-      <br>Para saber más, dale click aquí!👇 
+<div class="cards">
+  <h2>CORETECH FORGE<br> Web Dev</h2>
+    <p> Esta es nuestra area de desarrollo web donde podemos crear paginas web para mostrar tu trabajo, negocio o marca personal.<br><br>
+        -Landing pages para negocios.<br>
+        - paginas web que funcionan como tu portafolio digital<br>
+        - paginas web tipo link-in-bio para centralizar enlaces de redes sociales<br>
+        - Diseño responsivo (adaptable a smartphones y PC) e interactivo<br>
+        - soporte y actualización.<br>
+        y más... <br><br> 
+       Da click para saber más:
       <br><br>
     </p>
-    <a href="https://alex616lx.github.io" target="_blank" class="payutu">LexSound Audio Works</a>
+    <a href="pages/portafolio.html" class="payutu">Web Dev</a>
 </div>
+
 </div>
-<div class="footer-spacing">
-  <br><br>
-</div>
-</div>
+<div class="separator"></div>
+<script src="script.js"></script>
 </body>
 
 </html>
