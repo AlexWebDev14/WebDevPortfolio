@@ -980,6 +980,16 @@ margin: 0 5px;
 
 
 @media only screen and (max-width: 768px) {
+/* ===== PREVENIR DESBORDAMIENTOS ===== */
+* {
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+}
+
+/* Asegura que ningún elemento cause desbordamiento horizontal */
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
 
   /* ----- Navegación fija (menú hamburguesa + logo centrado) ----- */
   nav {
